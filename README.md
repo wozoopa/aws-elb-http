@@ -35,7 +35,7 @@ You can use this in your Terraform templates with the following steps:
 1.) Add a module resource to your template, e.g. `main.tf`
 ```
 module "web-elb" {
-  source        = "git::https://github.com/wozoopa/aws//elb-http"
+  source        = "git::https://github.com/wozoopa/aws-elb-http.git"
 
 
   elb_name                   = "${var.name}-${lookup(var.environment, var.region)}-WEB-ELB"
